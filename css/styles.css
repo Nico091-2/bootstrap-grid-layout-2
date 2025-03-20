@@ -1,15 +1,27 @@
-.image-container {
+.container-fluid {
     margin-top: 2rem;
     text-align: center;
 }
 
-.image-container > div {
+.container-fluid > div {
     columns: 3;
     gap: 1.25rem;
     padding-top: 1.25rem;
 } 
-.image-container img {
+.container-fluid img {
     display: block;
     width: 100%;
-    border-radius: ;
+    border-radius: 5px;
+    margin-bottom: 1.25rem;
+}
+@media (max-width: 48rem) {
+    .container-fluid > div {
+        columns: 2;
+    }
+}
+
+@media (max-width: 32rem) {
+    .container-fluid > div {
+        columns: 1;
+    }
 }
